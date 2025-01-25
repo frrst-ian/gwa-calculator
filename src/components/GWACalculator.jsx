@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from "react";
-import './GWACalculator.css'
+import { useState } from "react";
+import "./GWACalculator.css";
+import { Trash2 } from "lucide-react";
 
 const GWACalculator = () => {
   const [subjects, setSubjects] = useState([
@@ -20,6 +20,10 @@ const GWACalculator = () => {
         subject.id === id ? { ...subject, [field]: value } : subject
       )
     );
+  };
+
+  const removeSubject = (id) => {
+    setSubjects(subjects.filter((subject) => subject.id !== id));
   };
 
   const calculateGWA = () => {
@@ -87,10 +91,20 @@ const GWACalculator = () => {
               }
               min="1"
             />
+
+            <Trash2
+              className="del-btn"
+              onClick={() => removeSubject(subject.id)}
+              color="#ff0000" strokeWidth={1.75}
+              size={30}
+            />
+            
           </div>
         ))}
         <div>
-        <button onClick={addSubject}>Add Subject</button>
+          <button className="add-sub-btn" onClick={addSubject}>
+            Add Subject
+          </button>
           <div className="result">
             <h3>Your GWA:{calculateGWA()}</h3>
           </div>

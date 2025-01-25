@@ -9,7 +9,7 @@
 
 .subject-row {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -20,7 +20,7 @@ input {
   border-radius: 4px;
 }
 
-button {
+.add-sub-btn {
   background-color: #4caf50;
   color: white;
   padding: 0.5rem 1rem;
@@ -30,7 +30,7 @@ button {
   margin: 1rem 0;
 }
 
-button:hover {
+.add-sub-btn:hover {
   background-color: #45a049;
 }
 
