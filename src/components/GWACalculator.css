@@ -31,7 +31,6 @@ input {
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  transition: all 0.3s ease;
 }
 
 input:focus {
@@ -42,7 +41,6 @@ input:focus {
     linear-gradient(to right, #6366f1, #ff4d76);
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  transition: all 0.3s ease;
 }
 
 .add-sub-btn {
