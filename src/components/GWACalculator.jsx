@@ -115,9 +115,7 @@ const GWACalculator = () => {
         <>
           <div className="result">
             <h3>Your GWA is {calculateGWA()}</h3>
-          </div>
-          <div className="academic-distinction">
-            <h3>{academicDistinction()}</h3>
+            <h3 className="academic-distinction">{academicDistinction()}</h3>
           </div>
         </>
       )}

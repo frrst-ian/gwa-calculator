@@ -6,3 +6,8 @@ body {
 .container {
   margin-top: 50px;
 }
+
+.del-btn {
+  cursor: pointer;
+
+}

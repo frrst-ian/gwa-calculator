@@ -38,7 +38,7 @@ input:focus {
 }
 
 .add-sub-btn {
-  background-color: #4caf50;
+  background-color: #8c3ade;
   color: white;
   padding: 12px;
   border: none;
@@ -49,11 +49,32 @@ input:focus {
 }
 
 .add-sub-btn:hover {
-  background-color: #45a049;
+  background-color: #792bd8;
 }
 
-.result,
-.academic-distinction {
-  margin-top: 2rem;
+.academic-distinction,
+.result {
   text-align: center;
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.subject-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+  animation: slideDown 0.3s ease-out forwards;
 }
