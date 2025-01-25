@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./GWACalculator.css";
 import { Trash2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const GWACalculator = () => {
   const [subjects, setSubjects] = useState([
@@ -65,7 +66,13 @@ const GWACalculator = () => {
 
   return (
     <div className="gwa-calculator">
-      <h2>GWA Calculator</h2>
+      <nav className="nav-menu">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+      </nav>
       <div className="subjects">
         {subjects.map((subject) => (
           <div key={subject.id} className="subject-row">
