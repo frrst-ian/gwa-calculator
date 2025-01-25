@@ -1,0 +1,12 @@
+.nav-menu {
+    position: fixed;
+    top: 22px;
+    left: 200px;
+    right: 0;
+    background: white;
+    z-index: 1000;
+  }
+  
+  .container {
+    margin-top: 80px;
+  }

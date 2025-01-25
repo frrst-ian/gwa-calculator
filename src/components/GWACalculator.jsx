@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./GWACalculator.css";
 import { Trash2 } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const GWACalculator = () => {
   const [subjects, setSubjects] = useState([
@@ -47,10 +46,12 @@ const GWACalculator = () => {
     return totalUnits ? (weightedGradeSum / totalUnits).toFixed(3) : "0.00";
   };
 
+  // Function to calculate student's academic honor
   const academicDistinction = () => {
     const gwa = calculateGWA();
 
     const gwaFloat = parseFloat(gwa);
+
     if (gwaFloat >= 1.0 && gwaFloat <= 1.45) {
       return "CONGRATULATIONS! YOU ARE A PRESIDENT'S LISTER 🏆";
     } else if (gwaFloat >= 1.46 && gwaFloat <= 1.75) {
@@ -66,13 +67,12 @@ const GWACalculator = () => {
 
   return (
     <div className="gwa-calculator">
-      <nav className="nav-menu">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-        </ul>
-      </nav>
+      <h2>GWA Calculator</h2>
+      <p>
+        Enter required information for the current semester. Please fill in the
+        grade, units, and subject name for each row. Click &quot;Add Subject&quot; for
+        more subjects.
+      </p>
       <div className="subjects">
         {subjects.map((subject) => (
           <div key={subject.id} className="subject-row">
