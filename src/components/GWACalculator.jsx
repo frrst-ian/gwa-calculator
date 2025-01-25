@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
+import './GWACalculator.css'
 
 const GWACalculator = () => {
   const [subjects, setSubjects] = useState([
@@ -86,10 +87,10 @@ const GWACalculator = () => {
               }
               min="1"
             />
-            <button onClick={addSubject}>Add Subject</button>
           </div>
         ))}
         <div>
+        <button onClick={addSubject}>Add Subject</button>
           <div className="result">
             <h3>Your GWA:{calculateGWA()}</h3>
           </div>
