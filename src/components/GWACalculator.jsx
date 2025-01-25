@@ -95,10 +95,10 @@ const GWACalculator = () => {
             <Trash2
               className="del-btn"
               onClick={() => removeSubject(subject.id)}
-              color="#ff0000" strokeWidth={1.75}
-              size={30}
+              color="#ff0000"
+              strokeWidth={1.75}
+              size={34}
             />
-            
           </div>
         ))}
         <div>
