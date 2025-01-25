@@ -69,8 +69,9 @@ const GWACalculator = () => {
     <div className="gwa-calculator">
       <h2>GWA Calculator</h2>
       <p>
-        Enter required information for the current semester. Please fill in the
-        grade, units, and subject name for each row. Click &quot;Add Subject&quot; for
+        Please fill in the
+        grade, units, and subject name for each row.
+        <br/> Click &quot;Add Subject&quot; for
         more subjects.
       </p>
       <div className="subjects">
@@ -104,7 +105,6 @@ const GWACalculator = () => {
               }
               min="1"
             />
-
             <Trash2
               className="del-btn"
               onClick={() => removeSubject(subject.id)}
