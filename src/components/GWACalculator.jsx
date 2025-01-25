@@ -51,10 +51,16 @@ const GWACalculator = () => {
 
     const gwaFloat = parseFloat(gwa);
     if (gwaFloat >= 1.0 && gwaFloat <= 1.45) {
-      return "CONGRATULATIONS YOU ARE A PRESIDENT'S LISTER 🏆";
+      return "CONGRATULATIONS! YOU ARE A PRESIDENT'S LISTER 🏆";
     } else if (gwaFloat >= 1.46 && gwaFloat <= 1.75) {
-      return "CONGRATULATIONS YOU ARE A DEAN'S LISTER 🎓";
+      return "CONGRATULATIONS! YOU ARE A DEAN'S LISTER 🎓";
+    } else {
+      return "Keep pushing! You're doing great! 💪";
     }
+  };
+
+  const hasValidInputs = () => {
+    return subjects.some((subject) => subject.grade && subject.units);
   };
 
   return (
@@ -101,18 +107,20 @@ const GWACalculator = () => {
             />
           </div>
         ))}
-        <div>
-          <button className="add-sub-btn" onClick={addSubject}>
-            Add Subject
-          </button>
+      </div>
+      <button className="add-sub-btn" onClick={addSubject}>
+        Add Subject
+      </button>
+      {hasValidInputs() && (
+        <>
           <div className="result">
-            <h3>Your GWA:{calculateGWA()}</h3>
+            <h3>Your GWA is {calculateGWA()}</h3>
           </div>
           <div className="academic-distinction">
             <h3>{academicDistinction()}</h3>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </div>
   );
 };
