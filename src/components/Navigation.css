@@ -2,11 +2,19 @@
 
 .nav-menu {
   position: fixed;
-  top: 30px;
-  left: 150px;
-  right: 0;
+  top: 28px;
+  left: 100px;
   background: white;
   z-index: 1000;
+}
+.nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px; /* Space between menu items */
 }
 
 .container {
@@ -15,9 +23,33 @@
 
 ul {
   font-family: "Inter", serif;
-  font-size: 24px;
+  font-size: 22px;
 }   
 
+
 #home-txt {
-   color: #3b82f6; 
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-bottom: 2px; 
+}
+
+/* Hover underline effect */
+#home-txt:hover {
+  color: #4f46e5;
+}
+
+#home-txt::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4f46e5;
+  transition: width 0.3s ease-out;
+}
+
+#home-txt:hover::after {
+  width: 100%;
 }
