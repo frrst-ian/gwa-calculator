@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .gwa-calculator {
   display: flex;
   flex-direction: column;
   gap: 12px;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 100px auto;
   padding: 1rem;
 }
 
@@ -12,6 +14,12 @@
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+input,
+button,
+h2 {
+  font-family: "Inter", serif;
 }
 
 input,
@@ -38,7 +46,7 @@ input:focus {
 }
 
 .add-sub-btn {
-  background-color: #8c3ade;
+  background-color: #3b82f6;
   color: white;
   padding: 12px;
   border: none;
@@ -49,7 +57,7 @@ input:focus {
 }
 
 .add-sub-btn:hover {
-  background-color: #792bd8;
+  background-color: #1e40af;
 }
 
 .academic-distinction,

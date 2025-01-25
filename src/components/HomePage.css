@@ -1,14 +1,62 @@
-.get-started {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #6366f1;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 2rem;
-    transition: background 0.3s ease;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.wrapper {
+  margin: 200px 0 200px 0 ;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #3b82f6 0%,
+    #4338ca 51%,
+    #f43f5e 100%
+  );
   
-  .get-started:hover {
-    background: #4f46e5;
-  }
+}
+
+.text-container {
+  margin: 8px;
+}
+h1 {
+  text-shadow: 2px 2px 0px rgba(255, 255, 255, 1),
+               5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-grad,
+h1,
+p {
+  font-family: "Inter", serif;
+}
+
+p {
+  font-style: italic;
+}
+
+.btn-grad {
+  border: none;
+  margin: 10px;
+  padding: 18px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 12px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+}
+
+.get-started {
+  text-decoration: none;
+}

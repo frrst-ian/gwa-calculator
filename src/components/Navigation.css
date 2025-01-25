@@ -1,12 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 .nav-menu {
-    position: fixed;
-    top: 22px;
-    left: 200px;
-    right: 0;
-    background: white;
-    z-index: 1000;
-  }
-  
-  .container {
-    margin-top: 80px;
-  }
+  position: fixed;
+  top: 30px;
+  left: 150px;
+  right: 0;
+  background: white;
+  z-index: 1000;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+ul {
+  font-family: "Inter", serif;
+  font-size: 24px;
+}   
+
+#home-txt {
+   color: #3b82f6; 
+}
