@@ -14,7 +14,7 @@
 }
 
 .nav-menu li {
-  margin-bottom: 10px; /* Space between menu items */
+  margin-bottom: 10px; 
 }
 
 .container {
@@ -51,4 +51,20 @@ ul {
 
 #home-txt:hover::after {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .nav-menu ul {
+    font-size: 18px; /* Smaller text */
+    gap: 1rem;
+  }
+  
+  .container {
+    margin-top: 60px; /* Reduced spacing */
+  }
+
+  .nav-menu {
+    top: 20px;
+    left: 30px;
+  }
 }

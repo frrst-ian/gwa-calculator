@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .wrapper {
-  margin: 200px 0 200px 0 ;
+  margin: 200px 0 200px 0;
 }
 
 .home-container {
@@ -17,7 +17,6 @@
     #4338ca 51%,
     #f43f5e 100%
   );
-  
 }
 
 .text-container {
@@ -25,7 +24,7 @@
 }
 h1 {
   text-shadow: 2px 2px 0px rgba(255, 255, 255, 1),
-               5px 4px 0px rgba(0, 0, 0, 0.15);
+    5px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btn-grad,
@@ -53,10 +52,23 @@ p {
 }
 
 .btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
 }
 
 .get-started {
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+    text-shadow: none;
+  }
+
+  .btn-grad {
+    width: 90%;
+    padding: 16px;
+    border-radius: 8px;
+  }
 }

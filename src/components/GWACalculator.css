@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 .gwa-calculator {
+  min-width: unset;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-width: 600px;
+  max-width: 700px;
   margin: 50px auto;
   padding: 1rem;
 }
@@ -18,7 +19,8 @@
 
 input,
 button,
-h2 {
+h2,
+h3 {
   font-family: "Inter", serif;
 }
 
@@ -61,8 +63,9 @@ input:focus {
 .result {
   text-align: center;
 }
+
 .result {
-  margin-top:6px;
+  margin-top: 6px;
 }
 
 @keyframes slideDown {
@@ -100,4 +103,44 @@ input:focus {
 
 .nav-menu a:hover {
   color: #4f46e5;
+}
+
+@media (max-width: 480px) {
+  .gwa-calculator {
+    margin-top: 100px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  input {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .add-sub-btn {
+    padding: 16px;
+    width: 100%;
+    max-width: unset;
+  }
+
+  input,
+  button {
+    font-size: 0.85em;
+    min-height: 48px;
+  }
+
+  .subject-row {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  .del-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
