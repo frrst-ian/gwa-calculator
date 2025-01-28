@@ -107,7 +107,7 @@ input:focus {
 
 @media (max-width: 480px) {
   .gwa-calculator {
-    margin-top: 100px;
+    margin-top: 20px;
   }
   h2 {
     font-size: 1.2em;
