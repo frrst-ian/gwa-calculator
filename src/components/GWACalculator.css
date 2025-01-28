@@ -115,6 +115,7 @@ input:focus {
   p {
     font-size: 0.9em;
   }
+
   input {
     padding: 12px;
     width: 100%;
@@ -126,9 +127,8 @@ input:focus {
     max-width: unset;
   }
 
-  input,
-  button {
-    font-size: 0.85em;
+  input {
+    font-size: 0.8em;
     min-height: 48px;
   }
 
