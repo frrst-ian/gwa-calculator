@@ -57,7 +57,7 @@ ul {
 
 @media (max-width: 480px) {
   .nav-menu ul {
-    font-size: 18px; /* Smaller text */
+    font-size: 18px;
     gap: 1rem;
   }
   

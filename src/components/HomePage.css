@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+.container {
+  width: 100vh;
+}
 .wrapper {
-  margin: 200px 0 200px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:60vh;
+  width: 100vh;
 }
 
 .home-container {
@@ -13,7 +20,7 @@
 .btn-grad {
   background-image: linear-gradient(
     to right,
-    #3b82f6 0%,
+    #2377fe 0%,
     #4338ca 51%,
     #f43f5e 100%
   );
@@ -48,6 +55,7 @@ p {
   color: white;
   box-shadow: 0 0 20px #eee;
   border-radius: 12px;
+  font-size: 16px;
   display: block;
 }
 
@@ -67,7 +75,7 @@ p {
   }
 
   .btn-grad {
-    width: 90%;
+    width: 95%;
     padding: 16px;
     border-radius: 8px;
   }
